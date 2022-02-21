@@ -17,6 +17,6 @@ CREATE TABLE `sap_credit_management_master_credit_account_data`
   `CreditLimitRequestDate`             varchar(80) DEFAULT NULL,
   `CreditSegmentCurrency`              varchar(5) DEFAULT NULL,
     PRIMARY KEY (`BusinessPartner`, `CreditSegment`),
-    CONSTRAINT `SAPCreditManagementMasterAccountData_fk` FOREIGN KEY (`BusinessPartner`) REFERENCES `sap_credit_management_master_business_partner_data` (`BusinessPartner`)
+    CONSTRAINT `SAPCreditManagementMasterCreditAccountData_fk` FOREIGN KEY (`BusinessPartner`) REFERENCES `sap_credit_management_master_business_partner_data` (`BusinessPartner`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
